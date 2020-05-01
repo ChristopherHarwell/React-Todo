@@ -1,6 +1,5 @@
 import React from 'react';
 import Todo from './Todo';
-import TodoForm from './TodoForm';
 // your components will all go in this `component` directory.
 // feel free to change this component.js into TodoList.js
 
@@ -21,6 +20,7 @@ const TodoList = props => {
                         toggleTodo={props.toggleTodo}
                     />
                 ))}
+                <button onClick={props.clearTodo}>Clear Todos</button>
             </div>
         );
     };

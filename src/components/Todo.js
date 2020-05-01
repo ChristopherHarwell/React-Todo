@@ -6,6 +6,7 @@ import React from "react";
 const Todo = (props) => {
   return (
     <div
+      className={`task${props.todo.completed ? " completed" : ""}`}
       onClick={(e) => {
         // the data is being passed as props
         // and called 'todo' from App.js to TodoList
